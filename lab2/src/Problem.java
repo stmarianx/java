@@ -30,12 +30,19 @@ public class Problem {
         }
     }
 
-    public List<Vehicle> getVehicles() {
+    public Vehicle[] getVehicles() {
         List<Vehicle> allVehicles = new ArrayList<>();
         for (Depot depot : depots) {
             allVehicles.addAll(depot.getVehicles());
         }
-        return allVehicles;
+        return allVehicles.toArray(new Vehicle[0]);
+    }
+    public List<Depot> getDepots() {
+        return new ArrayList<>(depots);
+    }
+
+    public List<Client> getClients() {
+        return new ArrayList<>(clients);
     }
 }
 
