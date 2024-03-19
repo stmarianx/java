@@ -23,17 +23,27 @@ public class VRPSolver {
     private Map<String, Integer> generateRandomTravelTimes() {
         Map<String, Integer> generatedTravelTimes = new HashMap<>();
         Random rand = new Random();
+        // Existing depot to client and client to depot times
         for (Depot depot : problem.getDepots()) {
             for (Client client : problem.getClients()) {
-                String key = depot.getName() + "->" + client.getName();
-                generatedTravelTimes.put(key, rand.nextInt(60)); // Random travel time between 0 to 59 minutes
-                // Assuming return trip has the same travel time for simplification
-                key = client.getName() + "->" + depot.getName();
-                generatedTravelTimes.put(key, rand.nextInt(60)); // Random travel time
+                String depotToClientKey = depot.getName() + "->" + client.getName();
+                generatedTravelTimes.put(depotToClientKey, rand.nextInt(60));
+                String clientToDepotKey = client.getName() + "->" + depot.getName();
+                generatedTravelTimes.put(clientToDepotKey, rand.nextInt(60));
+            }
+        }
+        // Additional loop for client to client times
+        for (Client client1 : problem.getClients()) {
+            for (Client client2 : problem.getClients()) {
+                if (!client1.equals(client2)) { // Ensure we're not creating a path to the same client
+                    String clientToClientKey = client1.getName() + "->" + client2.getName();
+                    generatedTravelTimes.put(clientToClientKey, rand.nextInt(60));
+                }
             }
         }
         return generatedTravelTimes;
     }
+
 
     public void allocateClientsToVehicles() {
         for (Client client : problem.getClients()) {
