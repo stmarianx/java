@@ -23,7 +23,6 @@ public class Trip {
     public void displayVisitableNotPayable() {
         List<Visitable> visitableNotPayable = attractions.stream()
                 .filter(attraction -> !(attraction instanceof Payable))
-                .sorted(Comparator.comparing(visitable -> visitable.getOpeningHour(LocalDate.now())))
                 .collect(Collectors.toList());
 
         for (Visitable attraction : visitableNotPayable) {
