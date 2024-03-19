@@ -4,8 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9da30b2e-fdc9-4342-90bf-b83d1aa0bec0" name="Changes" comment="update to include Client1-&gt;Client2 times in VRP">
+    <list default="true" id="9da30b2e-fdc9-4342-90bf-b83d1aa0bec0" name="Changes" comment="Iterate through List&lt;Object&gt;">
+      <change afterPath="$PROJECT_DIR$/lab3/src/TimeInterval.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab3/src/TravelPlan.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3/src/Church.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/src/Church.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3/src/Concert.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/src/Concert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3/src/Statue.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/src/Statue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3/src/Trip.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/src/Trip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3/src/Visitable.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/src/Visitable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710835621375</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Iterate through List&lt;Object&gt;">
+      <created>1710839470362</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1710839470362</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -102,6 +117,7 @@
     <MESSAGE value="Implement VRPSolver with a greedy algorithm for client allocation" />
     <MESSAGE value="Lab 3 compulsory" />
     <MESSAGE value="update to include Client1-&gt;Client2 times in VRP" />
-    <option name="LAST_COMMIT_MESSAGE" value="update to include Client1-&gt;Client2 times in VRP" />
+    <MESSAGE value="Iterate through List&lt;Object&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Iterate through List&lt;Object&gt;" />
   </component>
 </project>

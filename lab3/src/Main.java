@@ -1,3 +1,4 @@
+import java.time.LocalDate;
 import java.util.List;
 
 public class Main {
@@ -9,7 +10,6 @@ public class Main {
 
         // Creating a trip
         Trip tripToParis = new Trip("Paris", "July 2025");
-
         tripToParis.addAttraction(libertyStatue);
         tripToParis.addAttraction(notreDame);
         tripToParis.addAttraction(rockConcert);
@@ -19,8 +19,8 @@ public class Main {
         System.out.println("Attractions:");
 
         // Displaying attraction details
-        List<Object> attractions = tripToParis.getAttractions();
-        for (Object attraction : attractions) {
+        List<Visitable> attractions = tripToParis.getAttractions(); // Corrected type to List<Visitable>
+        for (Visitable attraction : attractions) {
             if (attraction instanceof Statue) {
                 Statue statue = (Statue) attraction;
                 System.out.println("- Statue: " + statue.getName() + " (" + statue.getOpeningDays() + ", " + statue.getOpeningHours() + ")");
@@ -33,5 +33,12 @@ public class Main {
             }
         }
 
+        // Creating a travel plan
+        TravelPlan travelPlan = new TravelPlan();
+        travelPlan.addPlan(LocalDate.of(2025, 7, 10), List.of(libertyStatue, notreDame)); // creates an immutable list
+        travelPlan.addPlan(LocalDate.of(2025, 7, 12), List.of(rockConcert));
+
+        // Display the travel plan
+        travelPlan.displayPlan();
     }
 }
