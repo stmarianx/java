@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         // Creating attractions
@@ -17,7 +19,8 @@ public class Main {
         System.out.println("Attractions:");
 
         // Displaying attraction details
-        tripToParis.getAttractions().forEach(attraction -> {
+        List<Object> attractions = tripToParis.getAttractions();
+        for (Object attraction : attractions) {
             if (attraction instanceof Statue) {
                 Statue statue = (Statue) attraction;
                 System.out.println("- Statue: " + statue.getName() + " (" + statue.getOpeningDays() + ", " + statue.getOpeningHours() + ")");
@@ -28,6 +31,7 @@ public class Main {
                 Concert concert = (Concert) attraction;
                 System.out.println("- Concert: " + concert.getName() + " (" + concert.getOpeningDays() + ", " + concert.getOpeningHours() + ", $" + concert.getEntryFee() + ")");
             }
-        });
+        }
+
     }
 }
