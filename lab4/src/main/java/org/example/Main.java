@@ -25,6 +25,7 @@ public class Main {
             }
         }
 
+        /*
         // Extract and sort drivers by age
         LinkedList<Driver> sortedDrivers = people.stream()
                 .filter(p -> p instanceof Driver)
@@ -49,15 +50,19 @@ public class Main {
         System.out.println("Passengers sorted by name:");
         passengersSortedByName.forEach(passenger -> System.out.println(passenger.name + ", Age: " + passenger.age + ", Going to: " + passenger.destination));
 
-        /*
-        List<Passenger> passengers = people.stream()
-                .filter(p -> p instanceof Passenger)
-                .map(p -> (Passenger) p)
-                .collect(Collectors.toList());
-
-        System.out.println("\nPassengers:");
-        passengers.forEach(passenger -> System.out.println(passenger.name + ", Age: " + passenger.age + ", Going to: " + passenger.destination));
 
          */
+
+        CarpoolService carpoolService = new CarpoolService(people);
+
+        Set<String> driverDestinations = carpoolService.computeDriverDestinations();
+        System.out.println("Driver Destinations: " + driverDestinations);
+
+        Map<String, List<Person>> destinationMap = carpoolService.mapDestinationsToPeople();
+        destinationMap.forEach((destination, peopleList) -> {
+            System.out.println("Destination: " + destination);
+            peopleList.forEach(person -> System.out.println("\t" + person.getName()));
+        });
+
     }
 }
