@@ -13,4 +13,8 @@ class Driver extends Person {
     boolean canDriveTo(String destination) {
         return route.contains(destination);
     }
+
+    public List<String> getDestinations() {
+        return route; // Return the route list
+    }
 }

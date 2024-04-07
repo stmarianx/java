@@ -11,12 +11,12 @@ public class CarpoolSimulation {
         Random random = new Random();
         List<String> destinations = new ArrayList<>();
 
-        // Generăm 5 destinații false
+        // Generăm
         for (int i = 0; i < 5; i++) {
             destinations.add(faker.country().capital());
         }
 
-        // Populăm lista cu un mix aleatoriu de Driver și Passenger
+        // Populăm lista cu Driver și Passenger
         for (int i = 0; i < 20; i++) {
             String name = faker.name().fullName(); // Nume fals
             String destination = destinations.get(random.nextInt(destinations.size()));
@@ -26,7 +26,8 @@ public class CarpoolSimulation {
                 // Driver cu o rută care include destinația și încă una aleatorie
                 List<String> route = new ArrayList<>(destinations);
                 route.remove(destination); // Eliminăm destinația principală pentru a evita duplicarea
-                route = route.subList(0, 1 + random.nextInt(route.size())); // Selectăm 1-2 destinații pentru ruta
+                // Selectăm random.nextInt(route.size()) destinații pentru ruta
+                route = route.subList(0, 1 + random.nextInt(route.size()));
                 route.add(destination); // Adăugăm destinația principală înapoi
                 people.add(new Driver(name, destination, age, route));
             } else {
@@ -34,9 +35,10 @@ public class CarpoolSimulation {
             }
         }
 
+
         // Now use CarpoolService to compute the required information
         CarpoolService carpoolService = new CarpoolService(people);
-
+/*
         // Get the list of all destinations drivers pass through
         Set<String> driverDestinations = carpoolService.computeDriverDestinations();
         System.out.println("All Driver Destinations: " + driverDestinations);
@@ -47,5 +49,16 @@ public class CarpoolSimulation {
             System.out.println("Destination: " + dest);
             persons.forEach(person -> System.out.println("\tPerson: " + person.getName()));
         });
+
+         */
+
+        // Match drivers with passengers using the CarpoolService
+        Map<Driver, Passenger> matches = carpoolService.matchCarpool();
+
+        matches.forEach((driver, passenger) -> {
+            System.out.println("Driver: " + driver.getName() + " will take Passenger: " + passenger.getName());
+        });
+
+
     }
 }
