@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9da30b2e-fdc9-4342-90bf-b83d1aa0bec0" name="Changes" comment="Compulsory + Homework">
-      <change afterPath="$PROJECT_DIR$/lab6/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab6/src/main/java/org/example/ConfigPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab6/src/main/java/org/example/ControlPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab6/src/main/java/org/example/DrawingPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab6/src/main/java/org/example/MainFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab6/src/main/java/org/example/Stick.java" afterDir="false" />
+    <list default="true" id="9da30b2e-fdc9-4342-90bf-b83d1aa0bec0" name="Changes" comment="Compulsoy lab 6">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab7/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab7/src/main/java/game/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab7/src/main/java/game/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab7/src/main/java/main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab7/src/main/java/model/Bag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab7/src/main/java/model/Token.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab7/src/main/java/utils/TimeKeeper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -53,6 +58,7 @@
     "Application.CarpoolSimulation.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.MainFrame.executor": "Run",
+    "Application.main.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -66,9 +72,14 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
-  <component name="RunManager" selected="Application.MainFrame">
+  <component name="RunManager" selected="Application.main.Main">
     <configuration name="CarpoolSimulation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.CarpoolSimulation" />
       <module name="lab4" />
@@ -108,8 +119,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="main.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Main" />
+      <module name="lab7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.main.Main" />
         <item itemvalue="Application.MainFrame" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.CarpoolSimulation" />
@@ -139,7 +164,10 @@
       <workItem from="1712569120764" duration="137000" />
       <workItem from="1712653688230" duration="4825000" />
       <workItem from="1712669741815" duration="24000" />
-      <workItem from="1713856552959" duration="6077000" />
+      <workItem from="1713856552959" duration="7238000" />
+      <workItem from="1714130185027" duration="757000" />
+      <workItem from="1714131030659" duration="432000" />
+      <workItem from="1714382867531" duration="2317000" />
     </task>
     <task id="LOCAL-00001" summary="creare director principal pentru Java">
       <created>1710343722865</created>
@@ -241,7 +269,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712658603186</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Compulsoy lab 6">
+      <option name="closed" value="true" />
+      <created>1713863552580</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1713863552580</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,6 +296,20 @@
     <MESSAGE value="Faker added" />
     <MESSAGE value="Homework added" />
     <MESSAGE value="Compulsory + Homework" />
-    <option name="LAST_COMMIT_MESSAGE" value="Compulsory + Homework" />
+    <MESSAGE value="Compulsoy lab 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Compulsoy lab 6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="java-exception" />
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
