@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9da30b2e-fdc9-4342-90bf-b83d1aa0bec0" name="Changes" comment="Compulsoy lab 6">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab7/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab7/src/main/java/game/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab7/src/main/java/game/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab7/src/main/java/main/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab7/src/main/java/model/Bag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab7/src/main/java/model/Token.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab7/src/main/java/utils/TimeKeeper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab7/src/main/java/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab7/src/main/java/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab7/src/main/java/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab7/src/main/java/game/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab7/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab7/src/main/java/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab7/src/main/java/utils/TimeKeeper.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab7/src/main/java/utils/TimeKeeper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,32 +45,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.CarpoolSimulation.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.MainFrame.executor": "Run",
-    "Application.main.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "17",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/xampp/htdocs/TW5",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.CarpoolSimulation.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainFrame.executor&quot;: &quot;Run&quot;,
+    &quot;Application.main.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/TW5&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.main.Main">
     <configuration name="CarpoolSimulation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.CarpoolSimulation" />
@@ -168,6 +160,9 @@
       <workItem from="1714130185027" duration="757000" />
       <workItem from="1714131030659" duration="432000" />
       <workItem from="1714382867531" duration="2317000" />
+      <workItem from="1714396627776" duration="59000" />
+      <workItem from="1714396718830" duration="16000" />
+      <workItem from="1714397154699" duration="5824000" />
     </task>
     <task id="LOCAL-00001" summary="creare director principal pentru Java">
       <created>1710343722865</created>

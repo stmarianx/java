@@ -1,19 +1,20 @@
 package game;
 
 import model.Bag;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class Game {
     private List<Player> players = new ArrayList<>();
     private Bag bag;
-    private int n;  // This will be used to set the range for token pairs
-    private volatile boolean isRunning = true;  // Thread-safe flag to control game state
+    private final Object turnObject = new Object();
+    private volatile int currentPlayerIndex = 0;
+    private volatile boolean stopGameFlag = false;
+    private int n;
 
     public Game(int n) {
         this.n = n;
-        this.bag = new Bag(n);  // Initialize the bag with pairs from 1 to n
+        this.bag = new Bag(n); // Initialize the bag with pairs from 1 to n
     }
 
     public void addPlayer(String name) {
@@ -21,21 +22,61 @@ public class Game {
         players.add(player);
     }
 
-
     public void startGame() {
         for (Player player : players) {
             new Thread(player).start();
         }
     }
 
-    public void stopGame() {
-        isRunning = false;  // Set the flag to false to stop all players
+    // Synchronize the method to handle concurrent calls
+    public synchronized void stopGame() {
+        stopGameFlag = true;
+        // Notify all waiting threads that the game has ended.
+        synchronized (turnObject) {
+            turnObject.notifyAll();
+        }
+        determineWinner();
     }
-    public boolean isGameRunning() {
-        return isRunning;
+
+    public synchronized boolean isGameRunning() {
+        return !stopGameFlag;
     }
-    // Optional: method to check game status or declare a winner
-    public void checkGameStatus() {
-        // This method can be called periodically or after the game concludes to determine if a player has won or to display scores.
+
+    public void advanceTurn() {
+        synchronized (turnObject) {
+            currentPlayerIndex = (currentPlayerIndex + 1) % players.size();
+            turnObject.notifyAll();
+        }
+    }
+
+    public boolean isMyTurn(Player player) {
+        synchronized (turnObject) {
+            return players.get(currentPlayerIndex).equals(player);
+        }
+    }
+
+    private void determineWinner() {
+        Player winner = null;
+        int maxSequenceLength = 0;
+        for (Player player : players) {
+            int playerSequenceSize = player.getSequenceSize();
+            if (playerSequenceSize > maxSequenceLength) {
+                maxSequenceLength = playerSequenceSize;
+                winner = player;
+            }
+        }
+        if (winner != null) {
+            System.out.println("Winner is " + winner.getName() + " with a sequence of length: " + maxSequenceLength);
+        } else {
+            System.out.println("No winner, no sequences made.");
+        }
+    }
+
+    public Object getTurnObject() {
+        return turnObject;
+    }
+
+    public List<Player> getPlayers() {
+        return players;
     }
 }

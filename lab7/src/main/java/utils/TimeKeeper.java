@@ -15,15 +15,17 @@ public class TimeKeeper implements Runnable {
 
     @Override
     public void run() {
-        while (System.currentTimeMillis() - startTime < timeLimit * 1000) {
-            try {
+        try {
+            while (System.currentTimeMillis() - startTime < timeLimit * 1000 && game.isGameRunning()) {
                 Thread.sleep(1000);
                 System.out.println("Time: " + (System.currentTimeMillis() - startTime) / 1000 + "s");
-            } catch (InterruptedException e) {
-                e.printStackTrace();
             }
+            if (game.isGameRunning()) {
+                System.out.println("Time's up! Stopping the game.");
+                game.stopGame();
+            }
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
         }
-        game.stopGame();
-        System.out.println("Time's up!");
     }
 }

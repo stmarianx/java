@@ -16,7 +16,6 @@ public class Bag {
                 }
             }
         }
-        // Optionally shuffle the tokens to randomize the game
         Collections.shuffle(tokens);
     }
 
