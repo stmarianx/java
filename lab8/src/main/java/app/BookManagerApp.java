@@ -5,13 +5,14 @@ import dao.BookDAO;
 import model.Author;
 import model.Book;
 
-import java.util.Date;
+import java.sql.Date;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class BookManagerApp {
-    private static AuthorDAO authorDAO = new AuthorDAO();
-    private static BookDAO bookDAO = new BookDAO();
+    private static final AuthorDAO authorDAO = new AuthorDAO();
+    private static final BookDAO bookDAO = new BookDAO();
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -46,7 +47,10 @@ public class BookManagerApp {
                     scanner.nextLine(); // Consume newline
 
                     Author author = new Author(authorId, null); // Placeholder author
-                    Book book = new Book(0, title, List.of(author), language, Date.valueOf(pubDate), pages);
+                    List<Author> authors = new ArrayList<>();
+                    authors.add(author);
+
+                    Book book = new Book(0, title, authors, language, Date.valueOf(pubDate), pages);
                     bookDAO.addBook(book);
                     break;
                 case 3:
@@ -56,9 +60,9 @@ public class BookManagerApp {
                     }
                     break;
                 case 4:
-                    List<Author> authors = authorDAO.getAllAuthors();
-                    for (Author a : authors) {
-                        System.out.println(a.getName());
+                    List<String> authorsList = authorDAO.getAllAuthors();
+                    for (String a : authorsList) {
+                        System.out.println(a);
                     }
                     break;
                 case 5:

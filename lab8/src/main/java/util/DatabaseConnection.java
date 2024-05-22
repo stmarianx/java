@@ -9,7 +9,7 @@ public class DatabaseConnection {
     private Connection connection;
     private String url = "jdbc:mysql://localhost:3306/book_collection";
     private String username = "root";
-    private String password = "password"; // Replace with your MySQL password
+    private String password = "password";
 
     private DatabaseConnection() throws SQLException {
         try {

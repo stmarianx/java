@@ -4,21 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9da30b2e-fdc9-4342-90bf-b83d1aa0bec0" name="Changes" comment="lab 7 homework">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab8/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab8/src/main/java/app/BookManagerApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab8/src/main/java/dao/AuthorDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab8/src/main/java/dao/BookDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab8/src/main/java/model/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab8/src/main/java/model/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab8/src/main/java/util/DatabaseConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab8/src/main/resources/books.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="9da30b2e-fdc9-4342-90bf-b83d1aa0bec0" name="Changes" comment="lab 8 compulsory">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab8/src/main/java/app/BookManagerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab8/src/main/java/app/BookManagerApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab8/src/main/java/util/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab8/src/main/java/util/DatabaseConnection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,49 +44,50 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.CarpoolSimulation.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MainFrame.executor&quot;: &quot;Run&quot;,
-    &quot;Application.main.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Database Script.books.sql.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/TW11&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.BookManagerApp.executor": "Run",
+    "Application.CarpoolSimulation.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.MainFrame.executor": "Run",
+    "Application.main.Main.executor": "Run",
+    "Database Script.books.sql.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/xampp/htdocs/TW11",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;,
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql",
+      "mysql"
     ],
-    &quot;RunConfigurationTargetLRU&quot;: [
-      &quot;dd9a0010-069f-4bf3-914d-d2eeec4053c0&quot;
+    "RunConfigurationTargetLRU": [
+      "dd9a0010-069f-4bf3-914d-d2eeec4053c0"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\st_ma\Documents\java\java\lab8\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Database Script.books.sql">
-    <configuration name="CarpoolSimulation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.CarpoolSimulation" />
-      <module name="lab4" />
+  <component name="RunManager" selected="Application.BookManagerApp">
+    <configuration name="BookManagerApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="app.BookManagerApp" />
+      <module name="lab8" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="app.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -152,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BookManagerApp" />
         <item itemvalue="Database Script.books.sql" />
         <item itemvalue="Application.main.Main" />
         <item itemvalue="Application.MainFrame" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.CarpoolSimulation" />
       </list>
     </recent_temporary>
   </component>
@@ -196,7 +186,9 @@
       <workItem from="1716320414641" duration="862000" />
       <workItem from="1716321444116" duration="300000" />
       <workItem from="1716321766650" duration="1281000" />
-      <workItem from="1716323185575" duration="842000" />
+      <workItem from="1716323185575" duration="1508000" />
+      <workItem from="1716388281398" duration="638000" />
+      <workItem from="1716389959256" duration="2418000" />
     </task>
     <task id="LOCAL-00001" summary="creare director principal pentru Java">
       <created>1710343722865</created>
@@ -314,7 +306,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714466037190</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="lab 8 compulsory">
+      <option name="closed" value="true" />
+      <created>1716324063311</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1716324063312</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,7 +335,8 @@
     <MESSAGE value="Compulsory + Homework" />
     <MESSAGE value="Compulsoy lab 6" />
     <MESSAGE value="lab 7 homework" />
-    <option name="LAST_COMMIT_MESSAGE" value="lab 7 homework" />
+    <MESSAGE value="lab 8 compulsory" />
+    <option name="LAST_COMMIT_MESSAGE" value="lab 8 compulsory" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
